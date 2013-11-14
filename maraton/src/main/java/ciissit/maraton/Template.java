@@ -1,4 +1,4 @@
-package upao.ciissit.maraton;
+package ciissit.maraton;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -23,9 +23,11 @@ public abstract class Template {
         PrintStream jout;
         try {
             if (args.length == 2) {
-                jin = new BufferedReader(new InputStreamReader(new FileInputStream(args[0])));
-                jout = new PrintStream(new FileOutputStream(args[1]));
+                jin = new BufferedReader(new InputStreamReader(
+                        new FileInputStream(args[0])));
+                jout = new PrintStream(args[1], "UTF-8");
             } else {
+                // TODO usar filechooser para modo de prueba
                 jin = new BufferedReader(new InputStreamReader(System.in));
                 jout = System.out;
                 l.log(Level.WARNING, "Por favor configurar entrada y salida!");
