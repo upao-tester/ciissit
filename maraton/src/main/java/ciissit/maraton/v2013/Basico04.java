@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author martin
+ * @author Martín Canaval
  */
 public class Basico04 extends Template {
 

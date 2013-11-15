@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 /**
  *
- * @author martin
+ * @author Martín Canaval
  */
 public class Basico02 extends Template {
 

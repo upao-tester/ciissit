@@ -4,13 +4,12 @@ import ciissit.maraton.Template;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Stack;
 
 /**
  *
- * @author martin
+ * @author Martín Canaval
  */
 public class Intermedio04 extends Template {
 

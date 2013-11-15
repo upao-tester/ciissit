@@ -3,7 +3,6 @@ package ciissit.maraton;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -12,7 +11,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author martin
+ * @author Martín Canaval
  */
 public abstract class Template {
 

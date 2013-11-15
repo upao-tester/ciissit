@@ -9,7 +9,7 @@ import java.util.HashSet;
 
 /**
  *
- * @author martin
+ * @author Martín Canaval
  */
 public class Basico06 extends Template {
 
