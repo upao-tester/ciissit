@@ -4,7 +4,6 @@ import ciissit.maraton.Template;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.HashSet;
 import java.util.Stack;
 
 /**
@@ -21,7 +20,6 @@ public class Intermedio04 extends Template {
     public void start(BufferedReader jin, PrintStream jout) throws IOException {
         // TODO: Validar entrada
         String bfProgram;
-        HashSet<Character> orderedChars = new HashSet<Character>();
         int count = 0;
 
         do {
