@@ -6,7 +6,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- *
+ * Solución a Binary Clock
+ * 
  * @author Martín Canaval
  */
 public class Basico02 extends Template {
@@ -20,7 +21,7 @@ public class Basico02 extends Template {
         // TODO: Validar entrada
         String line;
         String[] time;
-        int h, m, s;
+        int h, m, s; // horas, minutos y segundos
         String binH, binM, binS;
         int count = 0;
         do {
@@ -49,6 +50,12 @@ public class Basico02 extends Template {
         } while(line != null && !line.isEmpty());
     }
     
+    /**
+     * Convierte un número entero a binario de por lo menos 6 dígitos en forma
+     * de cadena de caracteres.
+     * 
+     * @param n el número a convertir a binario de 6 dígitos
+     */
     private String toBinary6(int n) {
         return String.format("%6s", Integer.toBinaryString(n))
                 .replace(' ', '0');

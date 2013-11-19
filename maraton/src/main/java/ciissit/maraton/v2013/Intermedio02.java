@@ -37,6 +37,7 @@ public class Intermedio02 extends Template {
                 xHigh = temp[1];
                 inc = (int) temp[2];
 
+                // Volumen total de la botellita
                 volume = calcVolume(coefficient, degree, xLow, xHigh);
                 count++;
                 jout.printf("Caso %d: %.2f\n", count, volume);
@@ -74,12 +75,20 @@ public class Intermedio02 extends Template {
                     Logger.getLogger(Intermedio02.class.getName())
                             .log(Level.INFO, "{0}{1}{2}{3}", new Object[]
                             {mark, prevHigh, prevLow, sep});
-                    // IGNORAR!
+                    // IGNORAR: no tiene efecto en el programa.
                 }
             }
         } while (line != null && !line.isEmpty());
     }
 
+    /**
+     * Calcula la integral definida de una función polinomial de grado deg.
+     * 
+     * @param coef coeficientes del polinomio desde x^0 a x^deg
+     * @param deg grado del polinómio
+     * @param a límite izquierdo de la integral
+     * @param b límite derecho de la integral
+     */
     private double calcVolume(double[] coef, int deg, double a, double b) {
         // Calculando el volumen de un sólido por rotación
         int newDegree = deg * 2;
@@ -103,6 +112,12 @@ public class Intermedio02 extends Template {
         return volume * Math.PI;
     }
 
+    /**
+     * Recibe un arreglo de cadenas de caractéres, transforma cada elemento
+     * a double y retorna el equivalente arreglo de double.
+     * 
+     * @param data el arreglo de cadenas a convertir a arreglo de double
+     */
     private double[] fromStrArraytoDblArray(String[] data) {
         double[] vector = new double[data.length];
         for (int i = 0; i < data.length; i++) {

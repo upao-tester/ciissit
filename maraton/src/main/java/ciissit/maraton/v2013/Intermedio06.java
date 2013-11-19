@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
+ * Solución a All your base (mismo problema que básico 5)
  * 
  * @author Martín Canaval
  */

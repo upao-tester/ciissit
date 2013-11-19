@@ -7,7 +7,8 @@ import java.io.PrintStream;
 import java.util.Stack;
 
 /**
- *
+ * Solución a Brainfuck
+ * 
  * @author Martín Canaval
  */
 public class Intermedio04 extends Template {
@@ -33,6 +34,14 @@ public class Intermedio04 extends Template {
         } while (bfProgram != null && !bfProgram.isEmpty());
     }
     
+    /**
+     * Parser Brainfuck, recibe un programa en una cadena de caractéres y
+     * lo ejecuta.
+     * 
+     * @param program cadena de caracteres que contiene el programa en brainfuck
+     * @param jin entrada estándar para que use el programa
+     * @param jout salida estándar para ser usada por el programa
+     */
     private void parseBF(String program, BufferedReader jin, PrintStream jout)
             throws IOException {
         int[] data = new int[3000];

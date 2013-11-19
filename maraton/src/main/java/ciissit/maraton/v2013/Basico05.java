@@ -6,7 +6,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- *
+ * Solición a Toda tu Base
+ * 
  * @author Martín Canaval
  */
 public class Basico05 extends Template {

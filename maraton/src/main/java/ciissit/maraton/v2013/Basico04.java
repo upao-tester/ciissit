@@ -7,7 +7,8 @@ import java.io.PrintStream;
 import java.util.Arrays;
 
 /**
- *
+ * Solición a Producto Escalar Mínimo
+ * 
  * @author Martín Canaval
  */
 public class Basico04 extends Template {
@@ -37,7 +38,14 @@ public class Basico04 extends Template {
         }
     }
     
+    /**
+     * Recibe un arreglo de cadenas de caractéres, transforma cada elemento
+     * a entero y retorna el equivalente arreglo de enteros.
+     * 
+     * @param data el arreglo de cadenas a convertir a arreglo de enteros
+     */
     private int[] fromStrArraytoIntArray(String[] data) {
+        // TODO: Validar o lanzár excepción de tipo incorrecto.
         int[] vector = new int[data.length];
         for (int i = 0; i < data.length; i++) {
             vector[i] = Integer.parseInt(data[i]);

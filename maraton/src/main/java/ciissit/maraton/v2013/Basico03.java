@@ -6,7 +6,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- *
+ * Solución a Suma de Múltiplos
+ * 
  * @author Martín Canaval
  */
 public class Basico03 extends Template {
@@ -37,7 +38,7 @@ public class Basico03 extends Template {
                         }
                     }
                     count++;
-                    jout.printf("Caso %d: %d\n", count, suma);    
+                    jout.printf("Caso %d: %d\n", count, suma);
                 }
             }
         } while(line != null && !line.isEmpty());
