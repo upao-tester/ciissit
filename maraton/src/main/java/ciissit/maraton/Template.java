@@ -36,7 +36,7 @@ public abstract class Template {
                 int resp = fs.showOpenDialog(null);
                 if (resp == JFileChooser.APPROVE_OPTION) {
                     inFileName = fs.getSelectedFile().getPath();
-                    outFileName = inFileName.replaceAll("\\..*$", ".out");
+                    outFileName = inFileName.replaceAll("\\..*$", "") + ".out";
                     l.log(Level.INFO, "Salida: {0}", outFileName);
                 }
             }
