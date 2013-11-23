@@ -8,7 +8,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Solución a Curvy Little Bottles
+ * 
  * @author Martín Canaval
  */
 public class Intermedio02 extends Template {
@@ -82,7 +83,8 @@ public class Intermedio02 extends Template {
     }
 
     /**
-     * Calcula la integral definida de una función polinomial de grado deg.
+     * Calcula el volumen de un sólido por rotación de una función polinomial 
+     * de grado n.
      * 
      * @param coef coeficientes del polinomio desde x^0 a x^deg
      * @param deg grado del polinómio
